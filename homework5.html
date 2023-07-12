@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="major-cities">
+        <span class="paris">Paris</span>
+        <span class="london">London</span>
+        <span class="nyc">New York</span>
+        <span class="sydney">Sydney</span>
+      </div>
+
+      <form class="search-city">
+        <input
+          type="search"
+          placeholder="Enter City..."
+          class="enter-city"
+          autocomplete="off"
+          autofocus="on"
+        />
+        <button class="searchCity">search</button>
+        <button class="currentCity">current city</button>
+      </form>
+
+      <h1 id="city"></h1>
+
+      <ul class="placeholder">
+        <li id="date"></li>
+        <li class="weatherDescription"></li>
+      </ul>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="clearfix">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+              alt="Cloudy icon"
+              class="weather-icon float-left"
+            />
+          </div>
+          <div class="float-left">
+            <span class="temperature" id="temperature"></span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
+          </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: <span class="precipitation"></span> mm</li>
+            <li>Humidity: <span class="humidity"></span>%</li>
+            <li>Wind: <span class="wind"></span> km/h</li>
+          </ul>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🌤️</td>
+            <td>🌤️</td>
+            <td>🌧️</td>
+            <td>🌤️</td>
+            <td>☀️</td>
+            <td>🌤️</td>
+            <td>🌩️</td>
+          </tr>
+          <tr>
+            <td>20°</td>
+            <td>22°</td>
+            <td>19°</td>
+            <td>22°</td>
+            <td>26°</td>
+            <td>28°</td>
+            <td>29°</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

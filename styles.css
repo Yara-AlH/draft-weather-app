@@ -1,0 +1,164 @@
+body {
+  background-color: #fff9f7;
+}
+
+.container {
+  align-content: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 30px;
+  border: 2px solid;
+  border-color: burlywood;
+}
+
+.major-cities {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 5px;
+  color: rosybrown;
+}
+
+.paris:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.london:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.nyc:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sydney:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.enter-city {
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 0px 20px 0px;
+}
+
+.searchCity {
+  padding: 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  transition: ease-in-out;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.currentCity {
+  padding: 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  transition: ease-in-out;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: lightsteelblue;
+}
+
+button:hover {
+  background-color: rosybrown;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 22px;
+  color: rosybrown;
+  margin: 0 auto;
+}
+
+.placeholder {
+  margin-left: -35px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.temperature {
+  font-size: 70px;
+}
+
+.line-1 {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+.line-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 300px;
+}
+
+.degree {
+  margin-left: 40px;
+  padding: 60px;
+  background-color: rosybrown;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.DH {
+  margin-left: 440px;
+  padding: 30px 50px;
+  background-color: rosybrown;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.city {
+  margin-right: 20px;
+  padding: 30px;
+  background-color: rosybrown;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.preci {
+  padding: 30px;
+  background-color: rosybrown;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+
+td {
+  border-right: 1px solid #ddd;
+}
