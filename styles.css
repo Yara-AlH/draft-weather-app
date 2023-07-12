@@ -1,5 +1,6 @@
 body {
   background-color: #fff9f7;
+  font-family: monospace;
 }
 
 .container {
@@ -161,4 +162,17 @@ th {
 
 td {
   border-right: 1px solid #ddd;
+}
+
+.footer {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+
+  text-align: center;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
 }
